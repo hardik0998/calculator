@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom right,pink,purple);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.calculator{
+    margin:23px auto;
+    background-color: #fff;
+    padding: 23px;
+    box-shadow: 0px 0px 30px #000;
+    border-radius: 13px;
+}
+.top{
+    text-align: center;
+    margin: 33px auto;
+    background:linear-gradient(to bottom right,pink,purple);
+    border-radius: 23px;
+    color: #fff;
+    position: relative;
+    bottom: 25px;
+    font-size: 17px;
+}
+.btn{
+    padding: 23px;
+    margin: 5px;
+    border-radius: 53px;
+    cursor: pointer;
+    border: none;
+    height: 70px;
+    width: 70px;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+#zero{
+    display: inline-block;
+    width: 168px;
+}
+.clear{
+    background-color:lightgreen;
+    color: #fff;
+}
+.operator{
+    background-color:rgb(246, 150, 133);
+    color: #fff;
+}
+.num{
+    color: #fff;
+    background-color:lightsalmon;
+}
+.dot{
+    color: #fff;
+    background-color:lightskyblue;
+}
+.equal{
+    background-color:aquamarine;
+    color: #fff;
+}
+#mytxt{
+    width: 360px;
+    position:relative;
+    bottom: 33px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 23px;
+    font-size: 28px;
+    padding: 15px;
+}
+
+
+@media screen and (max-width:700px) {
+    .top{
+        text-align: center;
+        margin: 23px auto;
+        background:linear-gradient(to bottom right,pink,purple);
+        border-radius: 23px;
+        color: #fff;
+        position: relative;
+        bottom: 25px;
+        font-size: 13px;
+        display: inline-block;
+        width: 300px;
+    }
+    .btn{
+        padding: 10px;
+        margin: 5px;
+        border-radius: 53px;
+        cursor: pointer;
+        border: none;
+        height: 40px;
+        width: 40px;
+        font-size: 18px;
+        transition: all 0.2s ease;
+    }
+    #mytxt{
+        width: 300px;
+        position:relative;
+        bottom: 33px;
+        height: 100px;
+        border: 2px solid black;
+        border-radius: 23px;
+        font-size: 28px;
+        padding: 15px;
+    }
+}
